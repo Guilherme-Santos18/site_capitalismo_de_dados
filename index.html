@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA CIDADÃO | O Valor e o Controle da Informação</title>
+    <!-- Carregando Tailwind CSS CDN para um design moderno e responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuração de fontes e cores -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1E3A8A', // Azul escuro/Índigo
+                        'secondary': '#06B6D4', // Ciano vibrante para destaque
+                        'background': '#F9FAFB', // Fundo leve
+                        'text-base': '#1F2937',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilo para garantir que o scroll funcione corretamente com a barra de navegação fixa */
+        .header-spacer {
+            height: 64px;
+        }
+        section:target::before {
+            content: "";
+            display: block;
+            height: 64px;
+            margin-top: -64px;
+            visibility: hidden;
+        }
+        /* Estilo para animação leve dos ícones */
+        .svg-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        .svg-icon:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-text-base font-sans antialiased">
+
+    <!-- Header Fixo Simplificado -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <a href="#" class="text-2xl font-extrabold text-primary flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2 text-secondary" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-7-8a7 7 0 1114 0 7 7 0 01-14 0zm7 2a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                </svg>
+                DATA CIDADÃO
+            </a>
+
+            <!-- Menu de Navegação Rápida -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#parado" class="text-gray-600 hover:text-primary transition duration-300">Paradoxo</a>
+                <a href="#ciencia" class="text-gray-600 hover:text-primary transition duration-300">Refinamento</a>
+                <a href="#algoritmo" class="text-gray-600 hover:text-primary transition duration-300">Algoritmo</a>
+                <a href="#autonomia" class="text-gray-600 hover:text-primary transition duration-300">Ações Práticas</a>
+            </nav>
+            
+            <a href="#autonomia" class="px-4 py-2 bg-secondary text-white font-semibold rounded-lg shadow-md hover:bg-cyan-600 transition duration-300 hidden sm:inline-block">
+                Higienize-se!
+            </a>
+        </div>
+    </header>
+
+    <div class="header-spacer"></div>
+
+    <!-- Seção Hero - Destaque Principal -->
+    <section class="bg-primary text-white pt-12 pb-16 md:pt-16 md:pb-20 rounded-b-3xl shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-secondary font-bold uppercase mb-3 text-xl tracking-wider">ROTEIRO TÉCNICO E DIDÁTICO</p>
+            <h1 class="text-4xl sm:text-5xl font-extrabold mb-6 leading-tight">
+                O VALOR E O CONTROLE DA INFORMAÇÃO
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">
+                Entenda o ciclo de extração e monetização de dados. Seu letramento digital começa aqui.
+            </p>
+            <div class="inline-block px-6 py-2 bg-secondary text-primary font-black rounded-full text-lg shadow-xl">
+                Professor: Especialista em Redes e Ciência de Dados
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Abertura: O Paradoxo da Gratuidade -->
+    <section id="parado" class="py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border-t-8 border-secondary">
+                <h2 class="text-3xl font-bold text-primary mb-6 flex items-center">
+                    <span class="text-secondary text-4xl mr-3">💡</span>
+                    O Paradoxo: Por que o serviço gratuito vale Bilhões?
+                </h2>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Plataformas como YouTube ou TikTok não vendem o acesso à rede; elas operam na Economia da Atenção.
+                </p>
+                <div class="bg-indigo-100 p-4 rounded-xl text-primary font-semibold border-l-4 border-primary">
+                    <p class="text-xl">
+                        O custo do serviço é pago com a sua Informação Comportamental. Esse é o ativo financeiro mais valioso da era moderna.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Módulo 1: A Ciência dos Dados e o Processo de Refinamento -->
+    <section id="ciencia" class="py-16 md:py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-primary text-center mb-12">Módulo 1: O Refinamento da Informação</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Seu Dado é o Ativo Estratégico</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Um Dado Pessoal é qualquer informação que permite sua identificação. O lucro se concentra nos dados de Identificação Indireta (IP, histórico de visualizações, localização, padrões de compra).
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-secondary mb-4 mt-6">Big Data e a Predição</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        O valor real surge no Refinamento, onde a Inteligência Artificial (IA) transforma um "clique aleatório" em um Perfil Psicológico Detalhado capaz de prever suas ações futuras.
+                    </p>
+                    <div class="bg-yellow-100 p-3 rounded-lg text-gray-800 font-medium">
+                        Atenção: Os Cookies são um exemplo prático de coleta invisível que monitora suas atividades.
+                    </div>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 p-4 bg-primary rounded-xl shadow-2xl flex justify-center items-center">
+                    <!-- SVG para Módulo 1: IA + Dados -->
+                    <svg class="svg-icon h-48 w-48 text-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="12" y1="2" x2="12" y2="22" />
+                        <path d="M20.1 5.9l-16.2 12.2" />
+                        <path d="M3 10h18" />
+                        <path d="M3 14h18" />
+                        <path d="M12 2a4 4 0 0 0 4 4c0 1.1-.9 2-2 2h-4c-1.1 0-2-.9-2-2a4 4 0 0 0 4-4z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Módulo 2: O Algoritmo – O Mecanismo de Otimização -->
+    <section id="algoritmo" class="py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-primary text-center mb-12">Módulo 2: O Coração da Plataforma</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2 p-4 bg-secondary rounded-xl shadow-2xl flex justify-center items-center">
+                    <!-- SVG para Módulo 2: Algoritmo/Mecanismo de Otimização (Funil/Filtro) -->
+                    <svg class="svg-icon h-48 w-48 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 3v3h-3" />
+                        <path d="M7.5 12.5h9" />
+                        <path d="M12 21h7.5c1.4 0 2.5-1.1 2.5-2.5V10.5c0-1.4-1.1-2.5-2.5-2.5h-15C4.1 8 3 9.1 3 10.5v8C3 19.9 4.1 21 5.5 21H12z" />
+                        <path d="M12 16v-4" />
+                        <path d="M12 16h-.5" />
+                        <path d="M12 12h.5" />
+                        <path d="M16 12h1.5" />
+                        <path d="M16 16h-1.5" />
+                        <path d="M8 12h-1.5" />
+                        <path d="M8 16h1.5" />
+                    </svg>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-secondary mb-4">O Sistema de Recomendação</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        O Algoritmo tem o propósito de maximizar a sua retenção. Ele opera em um ciclo contínuo: Observação, Correlação, Predição e Otimização em tempo real.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-secondary mb-4 mt-6">As Métricas de Lucro</h3>
+                    <ul class="space-y-2 text-gray-700 list-none">
+                        <li class="flex items-start"><span class="text-primary font-bold mr-2">1. Engajamento:</span> Tempo de permanência e interações (o "Ibope").</li>
+                        <li class="flex items-start"><span class="text-primary font-bold mr-2">2. Taxa de Conversão:</span> O lucro final (suas ações fora da plataforma).</li>
+                    </ul>
+                    <p class="text-lg text-gray-700 mt-4 font-semibold">
+                        O algoritmo é um sistema de engenharia comportamental, não de entretenimento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Módulo 3: Os Riscos Sociais – Isolamento e Polarização -->
+    <section id="riscos" class="py-16 md:py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-primary text-center mb-12">Módulo 3: Riscos e Consequências Sociais</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h3 class="text-2xl font-bold text-secondary mb-4">A Perigosa Bolha de Filtro</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        O sistema cria intencionalmente uma Bolha de Filtro (Filter Bubble), limitando sua exposição a informações que contradizem suas crenças. Isso leva ao Isolamento Cognitivo e intensifica a Polarização Ideológica.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-secondary mb-4 mt-6">Vulnerabilidade e Extremo</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        O algoritmo promove o conteúdo mais chocante e polarizador (como Fake News) porque gera Engajamento Alto. O design explora a vulnerabilidade cognitiva (o Córtex Pré-Frontal em maturação).
+                    </p>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 p-4 bg-primary rounded-xl shadow-2xl flex justify-center items-center">
+                    <!-- SVG para Módulo 3: Bolha de Filtro/Isolamento -->
+                    <svg class="svg-icon h-48 w-48 text-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a10 10 0 0 0-3.3 19.5c.3.5.7.5 1 0a7 7 0 0 1 4.6 0c.3.5.7.5 1 0A10 10 0 0 0 12 2z" />
+                        <path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
+                        <path d="M10 18v-2.5c0-.8.7-1.5 1.5-1.5h1c.8 0 1.5.7 1.5 1.5V18" />
+                        <path d="M12 22a7 7 0 0 1-5-2.5" />
+                        <path d="M12 22a7 7 0 0 0 5-2.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Módulo 4: Letramento Digital – O Caminho para a Autonomia + CTA Final -->
+    <section id="autonomia" class="py-16 md:py-24 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-secondary mb-4">
+                Módulo 4: Higiene Digital em Ação
+            </h2>
+            <p class="text-xl mb-10 max-w-3xl mx-auto font-light">
+                O Letramento Digital te transforma de produto em cidadão ativo. Adote estas três ações concretas.
+            </p>
+
+            <!-- Tabela de Ações (Higienize-se) -->
+            <div class="overflow-x-auto mb-12">
+                <table class="w-full max-w-5xl mx-auto bg-indigo-700 rounded-xl shadow-2xl overflow-hidden text-sm md:text-base">
+                    <thead class="bg-indigo-800">
+                        <tr>
+                            <th class="px-4 py-3 text-left font-bold text-secondary uppercase tracking-wider">Foco</th>
+                            <th class="px-4 py-3 text-left font-bold text-secondary uppercase tracking-wider">Ação Técnica de Autonomia</th>
+                            <th class="px-4 py-3 text-left font-bold text-secondary uppercase tracking-wider hidden sm:table-cell">Base (Por que funciona?)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-indigo-600">
+                        <tr class="hover:bg-indigo-600 transition duration-300">
+                            <td class="px-4 py-4 font-semibold">Controle de Dados</td>
+                            <td class="px-4 py-4">Revisar Permissões de Aplicativos e não aceitar "Todos os Cookies" automaticamente.</td>
+                            <td class="px-4 py-4 hidden sm:table-cell">Minimiza a coleta de dados indiretos, exercendo o seu direito de controle (LGPD).</td>
+                        </tr>
+                        <tr class="hover:bg-indigo-600 transition duration-300">
+                            <td class="px-4 py-4 font-semibold">Gestão da Atenção</td>
+                            <td class="px-4 py-4">Estabelecer rotinas e limites claros de Tempo de Tela.</td>
+                            <td class="px-4 py-4 hidden sm:table-cell">Autoproteção contra a exploração da vulnerabilidade do cérebro.</td>
+                        </tr>
+                        <tr class="hover:bg-indigo-600 transition duration-300">
+                            <td class="px-4 py-4 font-semibold">Combate à Desinformação</td>
+                            <td class="px-4 py-4">Antes de compartilhar, Verificar a Fonte e buscar a informação em canais diversos e confiáveis.</td>
+                            <td class="px-4 py-4 hidden sm:table-cell">Rompe o ciclo da Bolha de Filtro e combate o incentivo algorítmico à polarização.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- CTA Simples de Encerramento -->
+            <div class="mt-16">
+                <p class="text-2xl font-extrabold mb-4">
+                    O Capitalismo de Dados não vai desaparecer, mas a sua criticidade deve aumentar.
+                </p>
+                <a href="#" class="inline-block px-12 py-4 bg-secondary text-primary font-black text-xl rounded-full shadow-2xl hover:bg-cyan-600 transition duration-300 transform hover:scale-105 border-4 border-white">
+                    Compartilhe este Roteiro com a sua rede!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:items-center">
+            <p class="text-sm text-gray-400 mb-2 md:mb-0">© 2024 DATA CIDADÃO - Roteiro de Letramento Digital.</p>
+            <div class="space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-sm">LGPD</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-sm">Créditos</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
